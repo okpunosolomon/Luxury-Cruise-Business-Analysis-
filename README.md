@@ -62,7 +62,7 @@ Shifting toward **full-time staffing and structured training** could increase cu
 
 ### 3. Marketing & Promotions ROI
 ![Promotion Effectiveness](visuals/Promotions_vs_Return_Likelihood.png)
-Promotional efforts reach broad audiences but show **low conversion efficiency**—with nearly 70% of engaged customers still undecided about returning.  
+Promotional efforts reach broad audiences but show **low conversion efficiency**, with nearly 70% of engaged customers still undecided about returning.  
 Targeted marketing guided by analytics could **reduce costs and improve ROI** significantly.
 
 ---
