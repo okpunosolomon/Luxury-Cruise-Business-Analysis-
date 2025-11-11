@@ -1,4 +1,5 @@
-![Luxury Cruise Business Analytics](visuals/A_banner_image_for_"Luxury_Cruise_Business_Analyti.png)
+![Luxury Cruise Business Analytics](visuals/banner.png)
+
 
 # 🚢 Luxury Cruise Business Analysis (R + Excel Project)
 
