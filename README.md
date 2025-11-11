@@ -144,7 +144,7 @@ This project demonstrates how structured data analytics can turn operational com
 It delivers insights that help management **minimize costs, maximize satisfaction, and improve long-term profitability**.  
 By bridging service quality with workforce data, it transforms observation into strategy and strategy into measurable action.
 
-> *Data doesn’t just describe business performance — it drives transformation.*
+> *Data doesn’t just describe business performance, it drives transformation.*
 
 ---
 
