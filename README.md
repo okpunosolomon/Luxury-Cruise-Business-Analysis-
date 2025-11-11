@@ -68,14 +68,33 @@ Targeted marketing guided by analytics could **reduce costs and improve ROI** si
 ---
 
 ### 4. Overall KPI Snapshot
-![Dashboard Overview](visuals/Luxury_Cruise_Dashboard.png)
-This summary dashboard integrates customer, workforce, and financial metrics:
-- Compensation: **£199.95 average per case**
-- Marketing Spend: **£165.04 average per customer**
-- Cruise Experience Score: **6.9/10**
-- Commission: **£78.93 per agent**
+![KPI Dashboard](visuals/Luxury_Cruise_Dashboard.png)
 
-These figures reveal disproportionate cost structures and highlight opportunities for strategic resource reallocation.
+The **Luxury Cruise Performance Dashboard** highlights how staffing, promotions, and service quality shape customer behavior and company costs.
+
+**Customer Return Likelihood by Job Type**  
+Full-time agents drive the highest customer satisfaction and repeat rates.  
+Zero-hour roles show weaker results, suggesting that **workforce stability improves loyalty**.
+
+**Promotions and Retention**  
+Promotions attract customers but don’t guarantee returns.  
+Service experience remains the stronger factor in building lasting loyalty.
+
+**Complaints and Compensation**  
+Restaurant food and public-area issues account for most complaints and highest compensation.  
+Preventive maintenance and quality control could reduce unnecessary payouts.
+
+**KPI Summary**
+| Metric | Average Value | Key Insight |
+|---------|----------------|-------------|
+| **Compensation** | **£199.95 / case** | High due to avoidable service issues. |
+| **Marketing Spend** | **£165.04 / customer** | High cost with modest retention. |
+| **Cruise Experience** | **6.9 / 10** | Average satisfaction level. |
+| **Commission** | **£78.93 / agent** | Needs stronger link to outcomes. |
+
+Overall, spending is high but not translating into retention.  
+The focus should shift from **reactive compensation** to **improving service experience** and smarter marketing alignment.
+
 
 ---
 
