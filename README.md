@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="visuals/banner.png" alt="Luxury Cruise Business Analytics" width="850">
-</p>
-
-
+![Luxury Cruise Business Analytics](visuals/banner.png)
 
 # 🚢 Luxury Cruise Business Analysis (R + Excel Project)
 
