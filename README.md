@@ -1,163 +1,137 @@
+![Luxury Cruise Business Analytics](visuals/A_banner_image_for_"Luxury_Cruise_Business_Analyti.png)
+
 # 🚢 Luxury Cruise Business Analysis (R + Excel Project)
 
-## 📊 Executive Summary
-This project delivers an end-to-end **data-driven evaluation of customer satisfaction, workforce efficiency, and marketing ROI** in the luxury cruise industry.  
-Using **R** and **Excel**, the analysis integrates over **5,000 passenger records** and **500 agent profiles** to identify the true drivers of profitability and customer retention.  
+## 🧭 Overview
+This project analyzes key operational and customer experience drivers within a **Luxury Cruise company**, using **R programming and Microsoft Excel**.  
+It transforms raw operational data into strategic intelligence to support **data-driven decision-making** in three key domains:  
+- **Customer Retention and Experience**
+- **Operational Efficiency and Workforce Optimization**
+- **Marketing and Compensation Effectiveness**
 
-The goal was to transform fragmented operational data into **actionable business intelligence** through statistical analysis, visualization, and managerial insight — empowering executives to make evidence-based strategic decisions.
-
-### 🔍 Key Highlights
-- Discovered that **restaurant food quality** and **public space maintenance** are the top causes of churn, representing over 60% of all compensation costs.  
-- Revealed that **full-time agents outperform part-time and zero-hour workers** across satisfaction and retention metrics.  
-- Exposed a mismatch between **marketing expenditure and return likelihood**, signaling wasted promotional spend.  
-- Designed an **R-based dashboard** consolidating KPIs across compensation, marketing, and agent performance for real-time tracking.
+The analysis links passenger satisfaction metrics with workforce profiles and promotional activity, offering insights that guide leadership toward **profitability, retention, and process excellence**.
 
 ---
 
-## 🎯 Business Challenge
-The organization faced:
-- Rising **compensation and marketing costs** without clear evidence of customer loyalty improvement.  
-- Limited understanding of **agent type performance** and how staffing structure affects customer satisfaction.  
-- A lack of integrated reporting tools for leadership to monitor **key performance indicators (KPIs)**.
+## 🎯 Business Objectives
+The study was designed to answer four strategic questions:
 
-This analysis restructured the company’s operational data and built a strategic intelligence framework for **service recovery optimization**, **workforce planning**, and **budget allocation**.
+1. What factors most strongly influence whether customers return after a cruise?  
+2. How do staff type and service consistency affect satisfaction and retention?  
+3. Which complaint areas generate the highest compensation costs?  
+4. How effective are marketing and promotions at improving loyalty and brand experience?
+
+By integrating descriptive analytics and visualization, this analysis provides a **complete view of operational health** and identifies actionable points for business optimization.
 
 ---
 
 ## ⚙️ Methodology
 
-### 1. Data Sources
-- **Customer Dataset:** complaints, compensation, marketing exposure, promotional participation, and return likelihood.  
-- **Agent Dataset:** job type, experience, tenure, and assigned customer records.  
-Both datasets were joined via `Agent_ID` to create a unified analytical model.
+### Data Sources
+- **Customer Dataset** – complaints, compensation, marketing exposure, return likelihood, promotions.  
+- **Agent Dataset** – job type, experience, performance, and tenure.  
+Merged via `Agent_ID` for holistic insight.
 
-### 2. Data Preparation
-Performed in **Excel** and **R**:
-- Cleaned missing and inconsistent entries using the `tidyverse` package.  
-- Standardized categorical labels (“don’t know” → “unsure”).  
-- Treated outliers with **IQR filtering** and normalized numeric fields for comparison.  
-- Derived calculated metrics such as **Compensation Efficiency Ratio** and **Marketing Spend per Return**.
-
-### 3. Analytical Workflow
-- **Descriptive Statistics:** to summarize financial and satisfaction metrics.  
-- **Exploratory Data Analysis (EDA):** to identify complaint patterns, agent trends, and marketing performance.  
-- **Data Visualization:** using `ggplot2` and R dashboard plots for strategic presentation.  
+### Analytical Process
+| Step | Description | Tools |
+|------|--------------|-------|
+| Data Cleaning | Removed missing/duplicate entries, standardized labels | Excel, R (`tidyverse`) |
+| Data Transformation | Created derived metrics: Return Likelihood, Compensation Ratio | R (`mutate`, `dplyr`) |
+| Exploratory Analysis | Summarized KPIs, identified high-impact variables | R (`summary`, `ggplot2`) |
+| Visualization | Built charts to communicate insight to management | R (`ggplot2`, `gridExtra`) |
 
 ---
 
-## 💡 Insights & Findings
+## 📈 Key Findings
 
-### 1. Customer Retention & Complaint Patterns
+### 1. Complaint & Compensation Drivers
 ![Complaint Drivers](visuals/Complaint_Reasons_vs_Return_Likelihood.png)
-*Restaurant food quality and public space issues dominate customer dissatisfaction, with average compensation payouts exceeding £200 per incident.*
-
-- 65% of compensation arises from **preventable quality issues**.  
-- High compensation did **not** correspond to increased loyalty — reactive spending dominates proactive experience improvement.  
-- **Restaurant and facility maintenance** remain the most cost-heavy service recovery areas.
+Restaurant food quality and public space maintenance represent **over 60% of total compensation costs**.  
+However, higher compensation **did not increase the likelihood of return**, suggesting reactive expense rather than preventive improvement.  
+This insight supports the case for **proactive service design** instead of after-sale appeasement.
 
 ---
 
-### 2. Descriptive Statistics Summary
-![Descriptive Stats](visuals/Descriptive_Statistics.csv)
-*Central tendency and dispersion of key quantitative variables.*
-
-| Variable | Mean (£) | Std. Dev | Key Insight |
-|-----------|-----------|-----------|--------------|
-| Compensation | 199.95 | 41.3 | High volatility due to inconsistent service response. |
-| Marketing Spend | 165.04 | 39.6 | Overinvestment relative to retention returns. |
-| Commission | 78.93 | 24.5 | Stable but disconnected from performance KPIs. |
-| Cruise Score | 6.9 / 10 | 1.2 | Average satisfaction, signaling competitive risk. |
-
-These descriptive measures provide the quantitative baseline for comparing departmental performance and investment impact.
+### 2. Agent Workforce Performance
+![Agent Performance](visuals/Return_Likelihood_by_JobType.png)
+Full-time agents outperform part-time and zero-hour staff across satisfaction and retention metrics.  
+Consistency, accountability, and training are major contributors.  
+Shifting toward **full-time staffing and structured training** could increase customer retention by **up to 15%**.
 
 ---
 
-### 3. Agent Workforce Analysis
-![Agent Job Type](visuals/Return_Likelihood_by_JobType.png)
-*Full-time agents demonstrate higher consistency in customer satisfaction and return likelihood.*
-
-- Full-time agents achieved the **highest retention rates** and **cruise satisfaction scores** (median: 7.5).  
-- Zero-hour agents underperformed, with irregular shifts and minimal training correlation.  
-- Converting top-performing part-timers into permanent contracts can improve return likelihood by **up to 15%**.
+### 3. Marketing & Promotions ROI
+![Promotion Effectiveness](visuals/Promotions_vs_Return_Likelihood.png)
+Promotional efforts reach broad audiences but show **low conversion efficiency**—with nearly 70% of engaged customers still undecided about returning.  
+Targeted marketing guided by analytics could **reduce costs and improve ROI** significantly.
 
 ---
 
-### 4. Marketing and Promotions ROI
-![Promotions ROI](visuals/Promotions_vs_Return_Likelihood.png)
-*Despite engagement boosts, 68% of customers exposed to promotions remained undecided about returning.*
+### 4. Overall KPI Snapshot
+![Dashboard Overview](visuals/Luxury_Cruise_Dashboard.png)
+This summary dashboard integrates customer, workforce, and financial metrics:
+- Compensation: **£199.95 average per case**
+- Marketing Spend: **£165.04 average per customer**
+- Cruise Experience Score: **6.9/10**
+- Commission: **£78.93 per agent**
 
-- Marketing success is limited by poor targeting — most promotions reach **low-LTV** customers.  
-- Predictive segmentation (AI/ML models) can refocus campaigns on **high-value repeat customers**.  
-- Potential for 20% improvement in ROI by reallocating spend toward targeted personalization.
-
----
-
-### 5. Financial KPI Overview
-![KPI Dashboard](visuals/Luxury_Cruise_Dashboard.png)
-*A high-level KPI dashboard visualizing compensation, marketing, commission, and satisfaction metrics.*
-
-This dashboard provides management with a **one-page performance snapshot** linking financial inputs to satisfaction outputs — bridging the gap between operational and executive perspectives.
+These figures reveal disproportionate cost structures and highlight opportunities for strategic resource reallocation.
 
 ---
 
-## 📊 Statistical Relationships
-
-### Compensation vs. Return Likelihood
-![Compensation Plot](visuals/Compensation_vs_Return_Likelihood.png)
-Customers receiving high-value compensation still exhibit weak loyalty correlations, proving compensation as a **short-term fix** rather than a strategic retention lever.
-
-### Promotions vs. Return Likelihood
-![Promotions Impact](visuals/Promotions_vs_Return_Likelihood.png)
-Marketing impact varies widely by customer profile, showing that **data segmentation** is critical for meaningful engagement.
-
-### KPI Summary
-![KPI Indicators](visuals/key_performance_indicators.png)
-This visualization integrates financial and operational performance, allowing business leaders to identify cost-to-impact mismatches instantly.
+### 5. Key Performance Indicators (KPI)
+![KPIs](visuals/key_performance_indicators.png)
+**KPI Focus Areas:**
+- **Cost Efficiency:** Reduce unnecessary compensation payouts.
+- **Customer Retention:** Increase repeat passengers via proactive issue management.
+- **Marketing Effectiveness:** Align spend with proven return behaviors.
+- **Agent Productivity:** Strengthen workforce impact on service experience.
 
 ---
 
-## 🧭 Managerial Recommendations
-| Focus Area | Recommendation | Strategic Outcome |
-|-------------|----------------|------------------|
-| **Customer Retention** | Launch predictive complaint analytics for early service issue detection. | Reduced churn and compensation cost. |
-| **Workforce Optimization** | Prioritize full-time staffing and continuous training for agents. | Improved customer experience consistency. |
-| **Marketing Efficiency** | Reallocate promotions using ML-driven segmentation. | Higher ROI and improved retention. |
-| **Performance Monitoring** | Deploy the KPI dashboard for weekly management review. | Real-time decision-making and accountability. |
+## 💼 Strategic Insights for Stakeholders
+
+| Business Area | Strategic Recommendation | Expected Impact |
+|----------------|---------------------------|------------------|
+| **Customer Experience** | Implement predictive complaint analytics for proactive issue resolution. | Reduced churn and compensation cost. |
+| **Workforce Management** | Expand full-time staffing; reinforce training and accountability. | Improved satisfaction and consistency. |
+| **Marketing Optimization** | Use segmentation models to target high-value passengers. | Increased marketing ROI and retention. |
+| **Performance Monitoring** | Deploy KPI dashboards for executive reviews. | Real-time visibility into cost and value drivers. |
 
 ---
 
-## 🧩 Tools & Techniques
-**Languages & Tools:** R, Excel  
-**Libraries Used:** `ggplot2`, `dplyr`, `tidyverse`, `readxl`, `gridExtra`  
-**Core Competencies:**  
-- Statistical Analysis & EDA  
-- KPI Design & Visualization  
-- Insight Communication  
-- Data Strategy Development  
+## 🧠 Technical Summary
+
+**Tools & Languages:** R, Excel  
+**Libraries Used:** `tidyverse`, `ggplot2`, `dplyr`, `readxl`, `gridExtra`  
+**Analytical Methods:**
+- Descriptive statistics  
+- Exploratory data analysis (EDA)  
+- KPI visualization  
+- Workforce and marketing performance analysis  
 
 ---
 
 ## 🚀 Future Enhancements
-- Integrate **Machine Learning models** (Logistic Regression, Random Forest) to predict churn and satisfaction.  
-- Expand dashboard to **Power BI** for enterprise scalability.  
-- Apply **Sentiment Analysis** to text-based customer feedback for emotional intelligence reporting.  
-- Implement **A/B testing** for campaign optimization.
+1. **Predictive Modeling:** Use machine learning to forecast customer return likelihood.  
+2. **Sentiment Analysis:** Analyze qualitative customer feedback for emotional drivers.  
+3. **Power BI Integration:** Develop interactive management dashboards for executive decision-making.  
+4. **A/B Testing:** Evaluate promotion efficiency through controlled campaign experiments.
 
 ---
 
 ## 🏁 Conclusion
-This project demonstrates how structured analytics converts raw data into **strategic intelligence**.  
-The findings emphasize that true competitive advantage in the cruise sector comes not from compensation or marketing volume, but from **customer understanding, staff consistency, and proactive decision-making**.  
+This project demonstrates how structured data analytics can turn operational complexity into clear business intelligence.  
+It delivers insights that help management **minimize costs, maximize satisfaction, and improve long-term profitability**.  
+By bridging service quality with workforce data, it transforms observation into strategy and strategy into measurable action.
 
-By connecting descriptive analysis with actionable recommendations, this project delivers insights that **translate directly into operational efficiency and long-term profitability**.
-
-⭐ *“Data doesn’t just describe performance — it directs progress.”*
+> *Data doesn’t just describe business performance — it drives transformation.*
 
 ---
 
 ## 👤 Author
 **Solomon Okpuno**  
-Data Analyst | Power BI | Power Platform | R | Excel | Process Automation  
+Data Analyst | Power BI | R | Excel | Power Platform | Process Automation  
 📍 Croydon, United Kingdom  
 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312) • [GitHub](https://github.com/okpunosolomon)
 ```
